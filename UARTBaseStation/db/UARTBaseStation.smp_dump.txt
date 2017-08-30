@@ -1,0 +1,7 @@
+
+State Machine - |FullBaseStation|Receiver:inst2|CS
+Name CS.stop CS.data CS.start CS.idle 
+CS.idle 0 0 0 0 
+CS.start 0 0 1 1 
+CS.data 0 1 0 1 
+CS.stop 1 0 0 1 

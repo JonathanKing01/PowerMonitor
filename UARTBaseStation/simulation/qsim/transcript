@@ -1,0 +1,27 @@
+# do UARTBaseStation.do 
+# ** Warning: (vlib-34) Library already exists at "work".
+# 
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module FullBaseStation
+# 
+# Top level modules:
+# 	FullBaseStation
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module FullBaseStation_vlg_sample_tst
+# -- Compiling module FullBaseStation_vlg_check_tst
+# -- Compiling module FullBaseStation_vlg_vec_tst
+# 
+# Top level modules:
+# 	FullBaseStation_vlg_vec_tst
+# vsim -L maxv_ver -L altera_ver -L altera_mf_ver -L 220model_ver -L sgate -c -t 1ps -novopt work.FullBaseStation_vlg_vec_tst 
+# Loading work.FullBaseStation_vlg_vec_tst
+# Loading work.FullBaseStation
+# Loading maxv_ver.maxv_io
+# Loading maxv_ver.maxv_lcell
+# Loading maxv_ver.maxv_asynch_lcell
+# Loading maxv_ver.maxv_lcell_register
+# Loading work.FullBaseStation_vlg_sample_tst
+# Loading work.FullBaseStation_vlg_check_tst
+# Simulation passed !
+# ** Note: $finish    : UARTBaseStation.vt(567)
+#    Time: 2 us  Iteration: 0  Instance: /FullBaseStation_vlg_vec_tst/tb_out

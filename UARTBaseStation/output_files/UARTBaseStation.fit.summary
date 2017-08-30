@@ -1,0 +1,11 @@
+Fitter Status : Successful - Wed Aug 30 12:44:44 2017
+Quartus II 64-Bit Version : 13.0.0 Build 156 04/24/2013 SJ Full Version
+Revision Name : UARTBaseStation
+Top-level Entity Name : FullBaseStation
+Family : MAX V
+Device : 5M570ZT100C5
+Timing Models : Final
+Total logic elements : 339 / 570 ( 59 % )
+Total pins : 32 / 74 ( 43 % )
+Total virtual pins : 0
+UFM blocks : 0 / 1 ( 0 % )

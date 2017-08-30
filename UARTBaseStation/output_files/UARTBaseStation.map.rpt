@@ -1,0 +1,339 @@
+Analysis & Synthesis report for UARTBaseStation
+Wed Aug 30 12:44:39 2017
+Quartus II 64-Bit Version 13.0.0 Build 156 04/24/2013 SJ Full Version
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Analysis & Synthesis Summary
+  3. Analysis & Synthesis Settings
+  4. Parallel Compilation
+  5. Analysis & Synthesis Source Files Read
+  6. Analysis & Synthesis Resource Usage Summary
+  7. Analysis & Synthesis Resource Utilization by Entity
+  8. State Machine - |FullBaseStation|Receiver:inst2|CS
+  9. General Register Statistics
+ 10. Inverted Register Statistics
+ 11. Multiplexer Restructuring Statistics (Restructuring Performed)
+ 12. Analysis & Synthesis Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2013 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++---------------------------------------------------------------------------+
+; Analysis & Synthesis Summary                                              ;
++-----------------------------+---------------------------------------------+
+; Analysis & Synthesis Status ; Successful - Wed Aug 30 12:44:39 2017       ;
+; Quartus II 64-Bit Version   ; 13.0.0 Build 156 04/24/2013 SJ Full Version ;
+; Revision Name               ; UARTBaseStation                             ;
+; Top-level Entity Name       ; FullBaseStation                             ;
+; Family                      ; MAX V                                       ;
+; Total logic elements        ; 393                                         ;
+; Total pins                  ; 32                                          ;
+; Total virtual pins          ; 0                                           ;
+; UFM blocks                  ; 0 / 1 ( 0 % )                               ;
++-----------------------------+---------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Settings                                                                                        ;
++----------------------------------------------------------------------------+--------------------+--------------------+
+; Option                                                                     ; Setting            ; Default Value      ;
++----------------------------------------------------------------------------+--------------------+--------------------+
+; Device                                                                     ; 5M570ZT100C5       ;                    ;
+; Top-level entity name                                                      ; FullBaseStation    ; UARTBaseStation    ;
+; Family name                                                                ; MAX V              ; Cyclone IV GX      ;
+; Use smart compilation                                                      ; Off                ; Off                ;
+; Enable parallel Assembler and TimeQuest Timing Analyzer during compilation ; On                 ; On                 ;
+; Enable compact report table                                                ; Off                ; Off                ;
+; Restructure Multiplexers                                                   ; Auto               ; Auto               ;
+; Create Debugging Nodes for IP Cores                                        ; Off                ; Off                ;
+; Preserve fewer node names                                                  ; On                 ; On                 ;
+; Disable OpenCore Plus hardware evaluation                                  ; Off                ; Off                ;
+; Verilog Version                                                            ; Verilog_2001       ; Verilog_2001       ;
+; VHDL Version                                                               ; VHDL_1993          ; VHDL_1993          ;
+; State Machine Processing                                                   ; Auto               ; Auto               ;
+; Safe State Machine                                                         ; Off                ; Off                ;
+; Extract Verilog State Machines                                             ; On                 ; On                 ;
+; Extract VHDL State Machines                                                ; On                 ; On                 ;
+; Ignore Verilog initial constructs                                          ; Off                ; Off                ;
+; Iteration limit for constant Verilog loops                                 ; 5000               ; 5000               ;
+; Iteration limit for non-constant Verilog loops                             ; 250                ; 250                ;
+; Add Pass-Through Logic to Inferred RAMs                                    ; On                 ; On                 ;
+; Infer RAMs from Raw Logic                                                  ; On                 ; On                 ;
+; Parallel Synthesis                                                         ; On                 ; On                 ;
+; NOT Gate Push-Back                                                         ; On                 ; On                 ;
+; Power-Up Don't Care                                                        ; On                 ; On                 ;
+; Remove Redundant Logic Cells                                               ; Off                ; Off                ;
+; Remove Duplicate Registers                                                 ; On                 ; On                 ;
+; Ignore CARRY Buffers                                                       ; Off                ; Off                ;
+; Ignore CASCADE Buffers                                                     ; Off                ; Off                ;
+; Ignore GLOBAL Buffers                                                      ; Off                ; Off                ;
+; Ignore ROW GLOBAL Buffers                                                  ; Off                ; Off                ;
+; Ignore LCELL Buffers                                                       ; Off                ; Off                ;
+; Ignore SOFT Buffers                                                        ; On                 ; On                 ;
+; Limit AHDL Integers to 32 Bits                                             ; Off                ; Off                ;
+; Optimization Technique                                                     ; Balanced           ; Balanced           ;
+; Carry Chain Length                                                         ; 70                 ; 70                 ;
+; Auto Carry Chains                                                          ; On                 ; On                 ;
+; Auto Open-Drain Pins                                                       ; On                 ; On                 ;
+; Perform WYSIWYG Primitive Resynthesis                                      ; Off                ; Off                ;
+; Auto Shift Register Replacement                                            ; Auto               ; Auto               ;
+; Allow Shift Register Merging across Hierarchies                            ; Auto               ; Auto               ;
+; Auto Clock Enable Replacement                                              ; On                 ; On                 ;
+; Allow Synchronous Control Signals                                          ; On                 ; On                 ;
+; Force Use of Synchronous Clear Signals                                     ; Off                ; Off                ;
+; Auto Resource Sharing                                                      ; Off                ; Off                ;
+; Use LogicLock Constraints during Resource Balancing                        ; On                 ; On                 ;
+; Ignore translate_off and synthesis_off directives                          ; Off                ; Off                ;
+; Report Parameter Settings                                                  ; On                 ; On                 ;
+; Report Source Assignments                                                  ; On                 ; On                 ;
+; Report Connectivity Checks                                                 ; On                 ; On                 ;
+; Ignore Maximum Fan-Out Assignments                                         ; Off                ; Off                ;
+; Synchronization Register Chain Length                                      ; 2                  ; 2                  ;
+; PowerPlay Power Optimization                                               ; Normal compilation ; Normal compilation ;
+; HDL message level                                                          ; Level2             ; Level2             ;
+; Suppress Register Optimization Related Messages                            ; Off                ; Off                ;
+; Number of Removed Registers Reported in Synthesis Report                   ; 5000               ; 5000               ;
+; Number of Swept Nodes Reported in Synthesis Report                         ; 5000               ; 5000               ;
+; Number of Inverted Registers Reported in Synthesis Report                  ; 100                ; 100                ;
+; Clock MUX Protection                                                       ; On                 ; On                 ;
+; Block Design Naming                                                        ; Auto               ; Auto               ;
+; Synthesis Effort                                                           ; Auto               ; Auto               ;
+; Shift Register Replacement - Allow Asynchronous Clear Signal               ; On                 ; On                 ;
+; Pre-Mapping Resynthesis Optimization                                       ; Off                ; Off                ;
+; Analysis & Synthesis Message Level                                         ; Medium             ; Medium             ;
+; Disable Register Merging Across Hierarchies                                ; Auto               ; Auto               ;
+; Synthesis Seed                                                             ; 1                  ; 1                  ;
++----------------------------------------------------------------------------+--------------------+--------------------+
+
+
++------------------------------------------+
+; Parallel Compilation                     ;
++----------------------------+-------------+
+; Processors                 ; Number      ;
++----------------------------+-------------+
+; Number detected on machine ; 4           ;
+; Maximum allowed            ; 4           ;
+;                            ;             ;
+; Average used               ; 1.00        ;
+; Maximum used               ; 1           ;
+;                            ;             ;
+; Usage by Processor         ; % Time Used ;
+;     Processor 1            ; 100.0%      ;
+;     Processors 2-4         ;   0.0%      ;
++----------------------------+-------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                  ;
++----------------------------------+-----------------+------------------------------------+-----------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type                          ; File Name with Absolute Path                        ; Library ;
++----------------------------------+-----------------+------------------------------------+-----------------------------------------------------+---------+
+; DataRegister.vhd                 ; yes             ; User VHDL File                     ; D:/UARTBaseStation/DataRegister.vhd                 ;         ;
+; InputMux.vhd                     ; yes             ; User VHDL File                     ; D:/UARTBaseStation/InputMux.vhd                     ;         ;
+; OutputMux.vhd                    ; yes             ; User VHDL File                     ; D:/UARTBaseStation/OutputMux.vhd                    ;         ;
+; Receiver.vhd                     ; yes             ; User VHDL File                     ; D:/UARTBaseStation/Receiver.vhd                     ;         ;
+; output_files/FullBaseStation.bdf ; yes             ; User Block Diagram/Schematic File  ; D:/UARTBaseStation/output_files/FullBaseStation.bdf ;         ;
+; display.vhd                      ; yes             ; User VHDL File                     ; D:/UARTBaseStation/display.vhd                      ;         ;
++----------------------------------+-----------------+------------------------------------+-----------------------------------------------------+---------+
+
+
++-----------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary         ;
++---------------------------------------------+-------+
+; Resource                                    ; Usage ;
++---------------------------------------------+-------+
+; Total logic elements                        ; 393   ;
+;     -- Combinational with no register       ; 137   ;
+;     -- Register only                        ; 137   ;
+;     -- Combinational with a register        ; 119   ;
+;                                             ;       ;
+; Logic element usage by number of LUT inputs ;       ;
+;     -- 4 input functions                    ; 97    ;
+;     -- 3 input functions                    ; 23    ;
+;     -- 2 input functions                    ; 130   ;
+;     -- 1 input functions                    ; 6     ;
+;     -- 0 input functions                    ; 0     ;
+;                                             ;       ;
+; Logic elements by mode                      ;       ;
+;     -- normal mode                          ; 300   ;
+;     -- arithmetic mode                      ; 93    ;
+;     -- qfbk mode                            ; 0     ;
+;     -- register cascade mode                ; 0     ;
+;     -- synchronous clear/load mode          ; 64    ;
+;     -- asynchronous clear/load mode         ; 0     ;
+;                                             ;       ;
+; Total registers                             ; 256   ;
+; Total logic cells in carry chains           ; 96    ;
+; I/O pins                                    ; 32    ;
+; Maximum fan-out node                        ; clk   ;
+; Maximum fan-out                             ; 256   ;
+; Total fan-out                               ; 1322  ;
+; Average fan-out                             ; 3.11  ;
++---------------------------------------------+-------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                  ;
++----------------------------+-------------+--------------+------------+------+--------------+--------------+-------------------+------------------+-----------------+------------+-------------------------------------+--------------+
+; Compilation Hierarchy Node ; Logic Cells ; LC Registers ; UFM Blocks ; Pins ; Virtual Pins ; LUT-Only LCs ; Register-Only LCs ; LUT/Register LCs ; Carry Chain LCs ; Packed LCs ; Full Hierarchy Name                 ; Library Name ;
++----------------------------+-------------+--------------+------------+------+--------------+--------------+-------------------+------------------+-----------------+------------+-------------------------------------+--------------+
+; |FullBaseStation           ; 393 (0)     ; 256          ; 0          ; 32   ; 0            ; 137 (0)      ; 137 (0)           ; 119 (0)          ; 96 (0)          ; 0 (0)      ; |FullBaseStation                    ; work         ;
+;    |DataRegister:inst4|    ; 20 (20)     ; 16           ; 0          ; 0    ; 0            ; 4 (4)        ; 16 (16)           ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |FullBaseStation|DataRegister:inst4 ; work         ;
+;    |DataRegister:inst5|    ; 20 (20)     ; 16           ; 0          ; 0    ; 0            ; 4 (4)        ; 16 (16)           ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |FullBaseStation|DataRegister:inst5 ; work         ;
+;    |DataRegister:inst6|    ; 20 (20)     ; 16           ; 0          ; 0    ; 0            ; 4 (4)        ; 16 (16)           ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |FullBaseStation|DataRegister:inst6 ; work         ;
+;    |DataRegister:inst7|    ; 20 (20)     ; 16           ; 0          ; 0    ; 0            ; 4 (4)        ; 16 (16)           ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |FullBaseStation|DataRegister:inst7 ; work         ;
+;    |InputMux:inst3|        ; 28 (28)     ; 24           ; 0          ; 0    ; 0            ; 4 (4)        ; 24 (24)           ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |FullBaseStation|InputMux:inst3     ; work         ;
+;    |OutputMux:inst8|       ; 148 (148)   ; 90           ; 0          ; 0    ; 0            ; 58 (58)      ; 4 (4)             ; 86 (86)          ; 64 (64)         ; 0 (0)      ; |FullBaseStation|OutputMux:inst8    ; work         ;
+;    |Receiver:inst2|        ; 40 (40)     ; 32           ; 0          ; 0    ; 0            ; 8 (8)        ; 16 (16)           ; 16 (16)          ; 0 (0)           ; 0 (0)      ; |FullBaseStation|Receiver:inst2     ; work         ;
+;    |display:inst1|         ; 97 (97)     ; 46           ; 0          ; 0    ; 0            ; 51 (51)      ; 29 (29)           ; 17 (17)          ; 32 (32)         ; 0 (0)      ; |FullBaseStation|display:inst1      ; work         ;
++----------------------------+-------------+--------------+------------+------+--------------+--------------+-------------------+------------------+-----------------+------------+-------------------------------------+--------------+
+Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
+Encoding Type:  One-Hot
++----------------------------------------------------+
+; State Machine - |FullBaseStation|Receiver:inst2|CS ;
++----------+---------+---------+----------+----------+
+; Name     ; CS.stop ; CS.data ; CS.start ; CS.idle  ;
++----------+---------+---------+----------+----------+
+; CS.idle  ; 0       ; 0       ; 0        ; 0        ;
+; CS.start ; 0       ; 0       ; 1        ; 1        ;
+; CS.data  ; 0       ; 1       ; 0        ; 1        ;
+; CS.stop  ; 1       ; 0       ; 0        ; 1        ;
++----------+---------+---------+----------+----------+
+
+
++------------------------------------------------------+
+; General Register Statistics                          ;
++----------------------------------------------+-------+
+; Statistic                                    ; Value ;
++----------------------------------------------+-------+
+; Total registers                              ; 256   ;
+; Number of registers using Synchronous Clear  ; 64    ;
+; Number of registers using Synchronous Load   ; 0     ;
+; Number of registers using Asynchronous Clear ; 0     ;
+; Number of registers using Asynchronous Load  ; 0     ;
+; Number of registers using Clock Enable       ; 114   ;
+; Number of registers using Preset             ; 0     ;
++----------------------------------------------+-------+
+
+
++--------------------------------------------------+
+; Inverted Register Statistics                     ;
++----------------------------------------+---------+
+; Inverted Register                      ; Fan out ;
++----------------------------------------+---------+
+; display:inst1|led_select_out[0]        ; 1       ;
+; Total number of inverted registers = 1 ;         ;
++----------------------------------------+---------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                                     ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                           ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------------------------------+
+; 3:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |FullBaseStation|Receiver:inst2|pcount[2]            ;
+; 3:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |FullBaseStation|Receiver:inst2|ncount[1]            ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |FullBaseStation|OutputMux:inst8|polling_counter[12] ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |FullBaseStation|OutputMux:inst8|style_counter[23]   ;
+; 9:1                ; 4 bits    ; 24 LEs        ; 12 LEs               ; 12 LEs                 ; Yes        ; |FullBaseStation|OutputMux:inst8|DataOut[0]          ;
+; 4:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; No         ; |FullBaseStation|display:inst1|Mux4                  ;
+; 8:1                ; 12 bits   ; 60 LEs        ; 24 LEs               ; 36 LEs                 ; No         ; |FullBaseStation|OutputMux:inst8|Mux3                ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------------------------------+
+
+
++-------------------------------+
+; Analysis & Synthesis Messages ;
++-------------------------------+
+Info: *******************************************************************
+Info: Running Quartus II 64-Bit Analysis & Synthesis
+    Info: Version 13.0.0 Build 156 04/24/2013 SJ Full Version
+    Info: Processing started: Wed Aug 30 12:44:38 2017
+Info: Command: quartus_map --read_settings_files=on --write_settings_files=off UARTBaseStation -c UARTBaseStation
+Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
+Info (12021): Found 2 design units, including 1 entities, in source file uartbasestation.vhd
+    Info (12022): Found design unit 1: UARTBaseStation-behavior
+    Info (12023): Found entity 1: UARTBaseStation
+Info (12021): Found 1 design units, including 1 entities, in source file fullvhdl.bdf
+    Info (12023): Found entity 1: FullVHDL
+Info (12021): Found 2 design units, including 1 entities, in source file memoryinputmux.vhd
+    Info (12022): Found design unit 1: MemoryMux-behavior
+    Info (12023): Found entity 1: MemoryMux
+Warning (12019): Can't analyze file -- file ../Project209/segment_display.vhd is missing
+Info (12021): Found 2 design units, including 1 entities, in source file segment_display.vhd
+    Info (12022): Found design unit 1: segment_display-behavior
+    Info (12023): Found entity 1: segment_display
+Info (12021): Found 2 design units, including 1 entities, in source file frameinputmimic.vhd
+    Info (12022): Found design unit 1: FrameInputMimic-behavior
+    Info (12023): Found entity 1: FrameInputMimic
+Info (12021): Found 1 design units, including 1 entities, in source file output_files/display_test.bdf
+    Info (12023): Found entity 1: display_test
+Info (12021): Found 1 design units, including 1 entities, in source file output_files/mux_test.bdf
+    Info (12023): Found entity 1: mux_test
+Info (12021): Found 2 design units, including 1 entities, in source file dataregister.vhd
+    Info (12022): Found design unit 1: DataRegister-behavior
+    Info (12023): Found entity 1: DataRegister
+Info (12021): Found 2 design units, including 1 entities, in source file inputmux.vhd
+    Info (12022): Found design unit 1: InputMux-behavior
+    Info (12023): Found entity 1: InputMux
+Info (12021): Found 2 design units, including 1 entities, in source file outputmux.vhd
+    Info (12022): Found design unit 1: OutputMux-behavior
+    Info (12023): Found entity 1: OutputMux
+Info (12021): Found 2 design units, including 1 entities, in source file receiver.vhd
+    Info (12022): Found design unit 1: Receiver-behavior
+    Info (12023): Found entity 1: Receiver
+Info (12021): Found 1 design units, including 1 entities, in source file output_files/receiver_test.bdf
+    Info (12023): Found entity 1: Receiver_test
+Info (12021): Found 1 design units, including 1 entities, in source file output_files/fullbasestation.bdf
+    Info (12023): Found entity 1: FullBaseStation
+Info (12021): Found 2 design units, including 1 entities, in source file display.vhd
+    Info (12022): Found design unit 1: display-behavior
+    Info (12023): Found entity 1: display
+Info (12127): Elaborating entity "FullBaseStation" for the top level hierarchy
+Info (12128): Elaborating entity "display" for hierarchy "display:inst1"
+Info (12128): Elaborating entity "OutputMux" for hierarchy "OutputMux:inst8"
+Warning (10492): VHDL Process Statement warning at OutputMux.vhd(114): signal "clk" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at OutputMux.vhd(134): signal "clk" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Info (12128): Elaborating entity "DataRegister" for hierarchy "DataRegister:inst5"
+Warning (10492): VHDL Process Statement warning at DataRegister.vhd(24): signal "clk" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Info (12128): Elaborating entity "InputMux" for hierarchy "InputMux:inst3"
+Warning (10492): VHDL Process Statement warning at InputMux.vhd(27): signal "clk" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Info (12128): Elaborating entity "Receiver" for hierarchy "Receiver:inst2"
+Warning (10492): VHDL Process Statement warning at Receiver.vhd(126): signal "clk" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at Receiver.vhd(164): signal "clk" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at Receiver.vhd(175): signal "clk" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at Receiver.vhd(186): signal "clk" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Info (21057): Implemented 425 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 4 input pins
+    Info (21059): Implemented 28 output pins
+    Info (21061): Implemented 393 logic cells
+Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 9 warnings
+    Info: Peak virtual memory: 472 megabytes
+    Info: Processing ended: Wed Aug 30 12:44:39 2017
+    Info: Elapsed time: 00:00:01
+    Info: Total CPU time (on all processors): 00:00:01
+
+
