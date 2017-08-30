@@ -25,14 +25,11 @@ int main( void )
 	uint8_t txindex = 0;  // initialize index position of array
 
 while (1){
-// if array index is less that 8 then complete the follow:
-	if(txindex < 8) {
+
 		data = TXBUF[txindex]; //read array into data variable
 		usart_transmit (data); //Transmit data by calling usart_transmit function
 		txindex ++;
-	}
-	else 
-		txindex = 0;  // reset the value of the index back to 0
+
 }
 return 0;
 }
