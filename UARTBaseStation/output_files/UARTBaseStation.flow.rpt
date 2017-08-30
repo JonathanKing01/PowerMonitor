@@ -1,5 +1,5 @@
 Flow report for UARTBaseStation
-Wed Aug 30 12:44:50 2017
+Wed Aug 30 21:19:12 2017
 Quartus II 64-Bit Version 13.0.0 Build 156 04/24/2013 SJ Full Version
 
 
@@ -40,15 +40,15 @@ applicable agreement for further details.
 +-------------------------------------------------------------------------+
 ; Flow Summary                                                            ;
 +---------------------------+---------------------------------------------+
-; Flow Status               ; Successful - Wed Aug 30 12:44:50 2017       ;
+; Flow Status               ; Successful - Wed Aug 30 21:19:12 2017       ;
 ; Quartus II 64-Bit Version ; 13.0.0 Build 156 04/24/2013 SJ Full Version ;
 ; Revision Name             ; UARTBaseStation                             ;
 ; Top-level Entity Name     ; FullBaseStation                             ;
 ; Family                    ; MAX V                                       ;
 ; Device                    ; 5M570ZT100C5                                ;
 ; Timing Models             ; Final                                       ;
-; Total logic elements      ; 339 / 570 ( 59 % )                          ;
-; Total pins                ; 32 / 74 ( 43 % )                            ;
+; Total logic elements      ; 335 / 570 ( 59 % )                          ;
+; Total pins                ; 16 / 74 ( 22 % )                            ;
 ; Total virtual pins        ; 0                                           ;
 ; UFM blocks                ; 0 / 1 ( 0 % )                               ;
 +---------------------------+---------------------------------------------+
@@ -59,7 +59,7 @@ applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 08/30/2017 12:44:38 ;
+; Start date & time ; 08/30/2017 21:19:01 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; UARTBaseStation     ;
 +-------------------+---------------------+
@@ -70,7 +70,7 @@ applicable agreement for further details.
 +-------------------------------------+---------------------------------+-----------------+-----------------+----------------+
 ; Assignment Name                     ; Value                           ; Default Value   ; Entity Name     ; Section Id     ;
 +-------------------------------------+---------------------------------+-----------------+-----------------+----------------+
-; COMPILER_SIGNATURE_ID               ; 109952947352967.150405387806004 ; --              ; --              ; --             ;
+; COMPILER_SIGNATURE_ID               ; 109952947345616.150408474108864 ; --              ; --              ; --             ;
 ; EDA_GENERATE_FUNCTIONAL_NETLIST     ; On                              ; --              ; --              ; eda_simulation ;
 ; EDA_OUTPUT_DATA_FORMAT              ; Verilog Hdl                     ; --              ; --              ; eda_simulation ;
 ; EDA_SIMULATION_TOOL                 ; ModelSim-Altera (Verilog)       ; <None>          ; --              ; --             ;
@@ -90,12 +90,12 @@ applicable agreement for further details.
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name               ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis      ; 00:00:01     ; 1.0                     ; 472 MB              ; 00:00:01                           ;
-; Fitter                    ; 00:00:04     ; 2.0                     ; 1002 MB             ; 00:00:04                           ;
-; Assembler                 ; 00:00:01     ; 1.0                     ; 392 MB              ; 00:00:01                           ;
-; TimeQuest Timing Analyzer ; 00:00:01     ; 1.0                     ; 415 MB              ; 00:00:01                           ;
-; EDA Netlist Writer        ; 00:00:01     ; 1.0                     ; 363 MB              ; 00:00:00                           ;
-; Total                     ; 00:00:08     ; --                      ; --                  ; 00:00:07                           ;
+; Analysis & Synthesis      ; 00:00:02     ; 1.0                     ; 480 MB              ; 00:00:01                           ;
+; Fitter                    ; 00:00:04     ; 1.0                     ; 994 MB              ; 00:00:04                           ;
+; Assembler                 ; 00:00:01     ; 1.0                     ; 393 MB              ; 00:00:01                           ;
+; TimeQuest Timing Analyzer ; 00:00:01     ; 1.0                     ; 417 MB              ; 00:00:01                           ;
+; EDA Netlist Writer        ; 00:00:01     ; 1.0                     ; 364 MB              ; 00:00:00                           ;
+; Total                     ; 00:00:09     ; --                      ; --                  ; 00:00:07                           ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
@@ -104,11 +104,11 @@ applicable agreement for further details.
 +---------------------------+------------------+-----------+------------+----------------+
 ; Module Name               ; Machine Hostname ; OS Name   ; OS Version ; Processor type ;
 +---------------------------+------------------+-----------+------------+----------------+
-; Analysis & Synthesis      ; EN-352796        ; Windows 7 ; 6.1        ; x86_64         ;
-; Fitter                    ; EN-352796        ; Windows 7 ; 6.1        ; x86_64         ;
-; Assembler                 ; EN-352796        ; Windows 7 ; 6.1        ; x86_64         ;
-; TimeQuest Timing Analyzer ; EN-352796        ; Windows 7 ; 6.1        ; x86_64         ;
-; EDA Netlist Writer        ; EN-352796        ; Windows 7 ; 6.1        ; x86_64         ;
+; Analysis & Synthesis      ; EN-337518        ; Windows 7 ; 6.1        ; x86_64         ;
+; Fitter                    ; EN-337518        ; Windows 7 ; 6.1        ; x86_64         ;
+; Assembler                 ; EN-337518        ; Windows 7 ; 6.1        ; x86_64         ;
+; TimeQuest Timing Analyzer ; EN-337518        ; Windows 7 ; 6.1        ; x86_64         ;
+; EDA Netlist Writer        ; EN-337518        ; Windows 7 ; 6.1        ; x86_64         ;
 +---------------------------+------------------+-----------+------------+----------------+
 
 

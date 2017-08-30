@@ -1,5 +1,5 @@
 Analysis & Synthesis report for UARTBaseStation
-Wed Aug 30 12:44:39 2017
+Wed Aug 30 21:19:02 2017
 Quartus II 64-Bit Version 13.0.0 Build 156 04/24/2013 SJ Full Version
 
 
@@ -14,10 +14,11 @@ Quartus II 64-Bit Version 13.0.0 Build 156 04/24/2013 SJ Full Version
   6. Analysis & Synthesis Resource Usage Summary
   7. Analysis & Synthesis Resource Utilization by Entity
   8. State Machine - |FullBaseStation|Receiver:inst2|CS
-  9. General Register Statistics
- 10. Inverted Register Statistics
- 11. Multiplexer Restructuring Statistics (Restructuring Performed)
- 12. Analysis & Synthesis Messages
+  9. User-Specified and Inferred Latches
+ 10. General Register Statistics
+ 11. Inverted Register Statistics
+ 12. Multiplexer Restructuring Statistics (Restructuring Performed)
+ 13. Analysis & Synthesis Messages
 
 
 
@@ -43,13 +44,13 @@ applicable agreement for further details.
 +---------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                              ;
 +-----------------------------+---------------------------------------------+
-; Analysis & Synthesis Status ; Successful - Wed Aug 30 12:44:39 2017       ;
+; Analysis & Synthesis Status ; Successful - Wed Aug 30 21:19:02 2017       ;
 ; Quartus II 64-Bit Version   ; 13.0.0 Build 156 04/24/2013 SJ Full Version ;
 ; Revision Name               ; UARTBaseStation                             ;
 ; Top-level Entity Name       ; FullBaseStation                             ;
 ; Family                      ; MAX V                                       ;
-; Total logic elements        ; 393                                         ;
-; Total pins                  ; 32                                          ;
+; Total logic elements        ; 391                                         ;
+; Total pins                  ; 16                                          ;
 ; Total virtual pins          ; 0                                           ;
 ; UFM blocks                  ; 0 / 1 ( 0 % )                               ;
 +-----------------------------+---------------------------------------------+
@@ -145,18 +146,18 @@ applicable agreement for further details.
 +----------------------------+-------------+
 
 
-+---------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                  ;
-+----------------------------------+-----------------+------------------------------------+-----------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type                          ; File Name with Absolute Path                        ; Library ;
-+----------------------------------+-----------------+------------------------------------+-----------------------------------------------------+---------+
-; DataRegister.vhd                 ; yes             ; User VHDL File                     ; D:/UARTBaseStation/DataRegister.vhd                 ;         ;
-; InputMux.vhd                     ; yes             ; User VHDL File                     ; D:/UARTBaseStation/InputMux.vhd                     ;         ;
-; OutputMux.vhd                    ; yes             ; User VHDL File                     ; D:/UARTBaseStation/OutputMux.vhd                    ;         ;
-; Receiver.vhd                     ; yes             ; User VHDL File                     ; D:/UARTBaseStation/Receiver.vhd                     ;         ;
-; output_files/FullBaseStation.bdf ; yes             ; User Block Diagram/Schematic File  ; D:/UARTBaseStation/output_files/FullBaseStation.bdf ;         ;
-; display.vhd                      ; yes             ; User VHDL File                     ; D:/UARTBaseStation/display.vhd                      ;         ;
-+----------------------------------+-----------------+------------------------------------+-----------------------------------------------------+---------+
++--------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                     ;
++----------------------------------+-----------------+------------------------------------+----------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type                          ; File Name with Absolute Path           ; Library ;
++----------------------------------+-----------------+------------------------------------+----------------------------------------+---------+
+; DataRegister.vhd                 ; yes             ; User VHDL File                     ; D:/UARTBaseStation/DataRegister.vhd    ;         ;
+; InputMux.vhd                     ; yes             ; User VHDL File                     ; D:/UARTBaseStation/InputMux.vhd        ;         ;
+; OutputMux.vhd                    ; yes             ; User VHDL File                     ; D:/UARTBaseStation/OutputMux.vhd       ;         ;
+; Receiver.vhd                     ; yes             ; User VHDL File                     ; D:/UARTBaseStation/Receiver.vhd        ;         ;
+; display.vhd                      ; yes             ; User VHDL File                     ; D:/UARTBaseStation/display.vhd         ;         ;
+; FullBaseStation.bdf              ; yes             ; User Block Diagram/Schematic File  ; D:/UARTBaseStation/FullBaseStation.bdf ;         ;
++----------------------------------+-----------------+------------------------------------+----------------------------------------+---------+
 
 
 +-----------------------------------------------------+
@@ -164,33 +165,33 @@ applicable agreement for further details.
 +---------------------------------------------+-------+
 ; Resource                                    ; Usage ;
 +---------------------------------------------+-------+
-; Total logic elements                        ; 393   ;
-;     -- Combinational with no register       ; 137   ;
-;     -- Register only                        ; 137   ;
-;     -- Combinational with a register        ; 119   ;
+; Total logic elements                        ; 391   ;
+;     -- Combinational with no register       ; 144   ;
+;     -- Register only                        ; 129   ;
+;     -- Combinational with a register        ; 118   ;
 ;                                             ;       ;
 ; Logic element usage by number of LUT inputs ;       ;
-;     -- 4 input functions                    ; 97    ;
-;     -- 3 input functions                    ; 23    ;
+;     -- 4 input functions                    ; 92    ;
+;     -- 3 input functions                    ; 34    ;
 ;     -- 2 input functions                    ; 130   ;
 ;     -- 1 input functions                    ; 6     ;
 ;     -- 0 input functions                    ; 0     ;
 ;                                             ;       ;
 ; Logic elements by mode                      ;       ;
-;     -- normal mode                          ; 300   ;
+;     -- normal mode                          ; 298   ;
 ;     -- arithmetic mode                      ; 93    ;
 ;     -- qfbk mode                            ; 0     ;
 ;     -- register cascade mode                ; 0     ;
 ;     -- synchronous clear/load mode          ; 64    ;
-;     -- asynchronous clear/load mode         ; 0     ;
+;     -- asynchronous clear/load mode         ; 4     ;
 ;                                             ;       ;
-; Total registers                             ; 256   ;
+; Total registers                             ; 247   ;
 ; Total logic cells in carry chains           ; 96    ;
-; I/O pins                                    ; 32    ;
+; I/O pins                                    ; 16    ;
 ; Maximum fan-out node                        ; clk   ;
-; Maximum fan-out                             ; 256   ;
-; Total fan-out                               ; 1322  ;
-; Average fan-out                             ; 3.11  ;
+; Maximum fan-out                             ; 247   ;
+; Total fan-out                               ; 1294  ;
+; Average fan-out                             ; 3.18  ;
 +---------------------------------------------+-------+
 
 
@@ -199,14 +200,14 @@ applicable agreement for further details.
 +----------------------------+-------------+--------------+------------+------+--------------+--------------+-------------------+------------------+-----------------+------------+-------------------------------------+--------------+
 ; Compilation Hierarchy Node ; Logic Cells ; LC Registers ; UFM Blocks ; Pins ; Virtual Pins ; LUT-Only LCs ; Register-Only LCs ; LUT/Register LCs ; Carry Chain LCs ; Packed LCs ; Full Hierarchy Name                 ; Library Name ;
 +----------------------------+-------------+--------------+------------+------+--------------+--------------+-------------------+------------------+-----------------+------------+-------------------------------------+--------------+
-; |FullBaseStation           ; 393 (0)     ; 256          ; 0          ; 32   ; 0            ; 137 (0)      ; 137 (0)           ; 119 (0)          ; 96 (0)          ; 0 (0)      ; |FullBaseStation                    ; work         ;
+; |FullBaseStation           ; 391 (0)     ; 247          ; 0          ; 16   ; 0            ; 144 (0)      ; 129 (0)           ; 118 (0)          ; 96 (0)          ; 0 (0)      ; |FullBaseStation                    ; work         ;
 ;    |DataRegister:inst4|    ; 20 (20)     ; 16           ; 0          ; 0    ; 0            ; 4 (4)        ; 16 (16)           ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |FullBaseStation|DataRegister:inst4 ; work         ;
 ;    |DataRegister:inst5|    ; 20 (20)     ; 16           ; 0          ; 0    ; 0            ; 4 (4)        ; 16 (16)           ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |FullBaseStation|DataRegister:inst5 ; work         ;
 ;    |DataRegister:inst6|    ; 20 (20)     ; 16           ; 0          ; 0    ; 0            ; 4 (4)        ; 16 (16)           ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |FullBaseStation|DataRegister:inst6 ; work         ;
 ;    |DataRegister:inst7|    ; 20 (20)     ; 16           ; 0          ; 0    ; 0            ; 4 (4)        ; 16 (16)           ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |FullBaseStation|DataRegister:inst7 ; work         ;
 ;    |InputMux:inst3|        ; 28 (28)     ; 24           ; 0          ; 0    ; 0            ; 4 (4)        ; 24 (24)           ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |FullBaseStation|InputMux:inst3     ; work         ;
-;    |OutputMux:inst8|       ; 148 (148)   ; 90           ; 0          ; 0    ; 0            ; 58 (58)      ; 4 (4)             ; 86 (86)          ; 64 (64)         ; 0 (0)      ; |FullBaseStation|OutputMux:inst8    ; work         ;
-;    |Receiver:inst2|        ; 40 (40)     ; 32           ; 0          ; 0    ; 0            ; 8 (8)        ; 16 (16)           ; 16 (16)          ; 0 (0)           ; 0 (0)      ; |FullBaseStation|Receiver:inst2     ; work         ;
+;    |OutputMux:inst8|       ; 145 (145)   ; 89           ; 0          ; 0    ; 0            ; 56 (56)      ; 4 (4)             ; 85 (85)          ; 64 (64)         ; 0 (0)      ; |FullBaseStation|OutputMux:inst8    ; work         ;
+;    |Receiver:inst2|        ; 41 (41)     ; 24           ; 0          ; 0    ; 0            ; 17 (17)      ; 8 (8)             ; 16 (16)          ; 0 (0)           ; 0 (0)      ; |FullBaseStation|Receiver:inst2     ; work         ;
 ;    |display:inst1|         ; 97 (97)     ; 46           ; 0          ; 0    ; 0            ; 51 (51)      ; 29 (29)           ; 17 (17)          ; 32 (32)         ; 0 (0)      ; |FullBaseStation|display:inst1      ; work         ;
 +----------------------------+-------------+--------------+------------+------+--------------+--------------+-------------------+------------------+-----------------+------------+-------------------------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
@@ -225,17 +226,35 @@ Encoding Type:  One-Hot
 +----------+---------+---------+----------+----------+
 
 
++--------------------------------------------------------------------------------------------------------+
+; User-Specified and Inferred Latches                                                                    ;
++----------------------------------------------------+--------------------------+------------------------+
+; Latch Name                                         ; Latch Enable Signal      ; Free of Timing Hazards ;
++----------------------------------------------------+--------------------------+------------------------+
+; Receiver:inst2|shift_reg_out[3]                    ; Receiver:inst2|shift_out ; yes                    ;
+; Receiver:inst2|shift_reg_out[6]                    ; Receiver:inst2|shift_out ; yes                    ;
+; Receiver:inst2|shift_reg_out[7]                    ; Receiver:inst2|shift_out ; yes                    ;
+; Receiver:inst2|shift_reg_out[4]                    ; Receiver:inst2|shift_out ; yes                    ;
+; Receiver:inst2|shift_reg_out[5]                    ; Receiver:inst2|shift_out ; yes                    ;
+; Receiver:inst2|shift_reg_out[2]                    ; Receiver:inst2|shift_out ; yes                    ;
+; Receiver:inst2|shift_reg_out[1]                    ; Receiver:inst2|shift_out ; yes                    ;
+; Receiver:inst2|shift_reg_out[0]                    ; Receiver:inst2|shift_out ; yes                    ;
+; Number of user-specified and inferred latches = 8  ;                          ;                        ;
++----------------------------------------------------+--------------------------+------------------------+
+Note: All latches listed above may not be present at the end of synthesis due to various synthesis optimizations.
+
+
 +------------------------------------------------------+
 ; General Register Statistics                          ;
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 256   ;
+; Total registers                              ; 247   ;
 ; Number of registers using Synchronous Clear  ; 64    ;
 ; Number of registers using Synchronous Load   ; 0     ;
-; Number of registers using Asynchronous Clear ; 0     ;
+; Number of registers using Asynchronous Clear ; 4     ;
 ; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 114   ;
+; Number of registers using Clock Enable       ; 102   ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
 
@@ -246,7 +265,10 @@ Encoding Type:  One-Hot
 ; Inverted Register                      ; Fan out ;
 +----------------------------------------+---------+
 ; display:inst1|led_select_out[0]        ; 1       ;
-; Total number of inverted registers = 1 ;         ;
+; OutputMux:inst8|Output_select[0]       ; 27      ;
+; OutputMux:inst8|Output_style           ; 17      ;
+; Receiver:inst2|pcount[0]               ; 6       ;
+; Total number of inverted registers = 4 ;         ;
 +----------------------------------------+---------+
 
 
@@ -255,13 +277,12 @@ Encoding Type:  One-Hot
 +--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------------------------------+
 ; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                           ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------------------------------+
-; 3:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |FullBaseStation|Receiver:inst2|pcount[2]            ;
-; 3:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |FullBaseStation|Receiver:inst2|ncount[1]            ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |FullBaseStation|OutputMux:inst8|polling_counter[12] ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |FullBaseStation|OutputMux:inst8|style_counter[23]   ;
-; 9:1                ; 4 bits    ; 24 LEs        ; 12 LEs               ; 12 LEs                 ; Yes        ; |FullBaseStation|OutputMux:inst8|DataOut[0]          ;
+; 3:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |FullBaseStation|Receiver:inst2|ncount[3]            ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |FullBaseStation|OutputMux:inst8|polling_counter[23] ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |FullBaseStation|OutputMux:inst8|style_counter[20]   ;
+; 5:1                ; 4 bits    ; 12 LEs        ; 12 LEs               ; 0 LEs                  ; Yes        ; |FullBaseStation|OutputMux:inst8|DataOut[3]          ;
 ; 4:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; No         ; |FullBaseStation|display:inst1|Mux4                  ;
-; 8:1                ; 12 bits   ; 60 LEs        ; 24 LEs               ; 36 LEs                 ; No         ; |FullBaseStation|OutputMux:inst8|Mux3                ;
+; 4:1                ; 12 bits   ; 24 LEs        ; 24 LEs               ; 0 LEs                  ; No         ; |FullBaseStation|OutputMux:inst8|Mux0                ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------------------------------+
 
 
@@ -271,28 +292,12 @@ Encoding Type:  One-Hot
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 13.0.0 Build 156 04/24/2013 SJ Full Version
-    Info: Processing started: Wed Aug 30 12:44:38 2017
+    Info: Processing started: Wed Aug 30 21:19:00 2017
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off UARTBaseStation -c UARTBaseStation
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
-Info (12021): Found 2 design units, including 1 entities, in source file uartbasestation.vhd
-    Info (12022): Found design unit 1: UARTBaseStation-behavior
-    Info (12023): Found entity 1: UARTBaseStation
-Info (12021): Found 1 design units, including 1 entities, in source file fullvhdl.bdf
-    Info (12023): Found entity 1: FullVHDL
-Info (12021): Found 2 design units, including 1 entities, in source file memoryinputmux.vhd
-    Info (12022): Found design unit 1: MemoryMux-behavior
-    Info (12023): Found entity 1: MemoryMux
-Warning (12019): Can't analyze file -- file ../Project209/segment_display.vhd is missing
-Info (12021): Found 2 design units, including 1 entities, in source file segment_display.vhd
-    Info (12022): Found design unit 1: segment_display-behavior
-    Info (12023): Found entity 1: segment_display
 Info (12021): Found 2 design units, including 1 entities, in source file frameinputmimic.vhd
     Info (12022): Found design unit 1: FrameInputMimic-behavior
     Info (12023): Found entity 1: FrameInputMimic
-Info (12021): Found 1 design units, including 1 entities, in source file output_files/display_test.bdf
-    Info (12023): Found entity 1: display_test
-Info (12021): Found 1 design units, including 1 entities, in source file output_files/mux_test.bdf
-    Info (12023): Found entity 1: mux_test
 Info (12021): Found 2 design units, including 1 entities, in source file dataregister.vhd
     Info (12022): Found design unit 1: DataRegister-behavior
     Info (12023): Found entity 1: DataRegister
@@ -305,35 +310,42 @@ Info (12021): Found 2 design units, including 1 entities, in source file outputm
 Info (12021): Found 2 design units, including 1 entities, in source file receiver.vhd
     Info (12022): Found design unit 1: Receiver-behavior
     Info (12023): Found entity 1: Receiver
-Info (12021): Found 1 design units, including 1 entities, in source file output_files/receiver_test.bdf
-    Info (12023): Found entity 1: Receiver_test
-Info (12021): Found 1 design units, including 1 entities, in source file output_files/fullbasestation.bdf
-    Info (12023): Found entity 1: FullBaseStation
 Info (12021): Found 2 design units, including 1 entities, in source file display.vhd
     Info (12022): Found design unit 1: display-behavior
     Info (12023): Found entity 1: display
+Info (12021): Found 1 design units, including 1 entities, in source file fullbasestation.bdf
+    Info (12023): Found entity 1: FullBaseStation
 Info (12127): Elaborating entity "FullBaseStation" for the top level hierarchy
 Info (12128): Elaborating entity "display" for hierarchy "display:inst1"
 Info (12128): Elaborating entity "OutputMux" for hierarchy "OutputMux:inst8"
-Warning (10492): VHDL Process Statement warning at OutputMux.vhd(114): signal "clk" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
-Warning (10492): VHDL Process Statement warning at OutputMux.vhd(134): signal "clk" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at OutputMux.vhd(49): signal "clk" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at OutputMux.vhd(78): signal "clk" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at OutputMux.vhd(109): signal "clk" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at OutputMux.vhd(123): signal "clk" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at OutputMux.vhd(149): signal "clk" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
 Info (12128): Elaborating entity "DataRegister" for hierarchy "DataRegister:inst5"
-Warning (10492): VHDL Process Statement warning at DataRegister.vhd(24): signal "clk" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at DataRegister.vhd(26): signal "clk" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
 Info (12128): Elaborating entity "InputMux" for hierarchy "InputMux:inst3"
-Warning (10492): VHDL Process Statement warning at InputMux.vhd(27): signal "clk" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
 Info (12128): Elaborating entity "Receiver" for hierarchy "Receiver:inst2"
-Warning (10492): VHDL Process Statement warning at Receiver.vhd(126): signal "clk" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
-Warning (10492): VHDL Process Statement warning at Receiver.vhd(164): signal "clk" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
-Warning (10492): VHDL Process Statement warning at Receiver.vhd(175): signal "clk" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
-Warning (10492): VHDL Process Statement warning at Receiver.vhd(186): signal "clk" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
-Info (21057): Implemented 425 device resources after synthesis - the final resource count might be different
+Warning (10492): VHDL Process Statement warning at Receiver.vhd(232): signal "shift_reg" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10631): VHDL Process Statement warning at Receiver.vhd(229): inferring latch(es) for signal or variable "shift_reg_out", which holds its previous value in one or more paths through the process
+Info (10041): Inferred latch for "shift_reg_out[0]" at Receiver.vhd(229)
+Info (10041): Inferred latch for "shift_reg_out[1]" at Receiver.vhd(229)
+Info (10041): Inferred latch for "shift_reg_out[2]" at Receiver.vhd(229)
+Info (10041): Inferred latch for "shift_reg_out[3]" at Receiver.vhd(229)
+Info (10041): Inferred latch for "shift_reg_out[4]" at Receiver.vhd(229)
+Info (10041): Inferred latch for "shift_reg_out[5]" at Receiver.vhd(229)
+Info (10041): Inferred latch for "shift_reg_out[6]" at Receiver.vhd(229)
+Info (10041): Inferred latch for "shift_reg_out[7]" at Receiver.vhd(229)
+Info (18000): Registers with preset signals will power-up high
+Info (21057): Implemented 407 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 4 input pins
-    Info (21059): Implemented 28 output pins
-    Info (21061): Implemented 393 logic cells
-Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 9 warnings
-    Info: Peak virtual memory: 472 megabytes
-    Info: Processing ended: Wed Aug 30 12:44:39 2017
-    Info: Elapsed time: 00:00:01
+    Info (21059): Implemented 12 output pins
+    Info (21061): Implemented 391 logic cells
+Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 8 warnings
+    Info: Peak virtual memory: 480 megabytes
+    Info: Processing ended: Wed Aug 30 21:19:02 2017
+    Info: Elapsed time: 00:00:02
     Info: Total CPU time (on all processors): 00:00:01
 
 

@@ -104,7 +104,7 @@ VCCINT                       : 39        : power  :                   : 1.8V    
 GND*                         : 40        :        :                   :         : 1         :                
 GND*                         : 41        :        :                   :         : 1         :                
 ledsegment[2]                : 42        : output : 3.3-V LVTTL       :         : 1         : Y              
-Current_register[4]          : 43        : output : 3.3-V LVTTL       :         : 1         : N              
+GND*                         : 43        :        :                   :         : 1         :                
 ledsegment[3]                : 44        : output : 3.3-V LVTTL       :         : 1         : Y              
 VCCIO1                       : 45        : power  :                   : 3.3V    : 1         :                
 GND                          : 46        : gnd    :                   :         :           :                
@@ -123,30 +123,30 @@ ledsel[1]                    : 58        : output : 3.3-V LVTTL       :         
 VCCIO2                       : 59        : power  :                   : 3.3V    : 2         :                
 GND                          : 60        : gnd    :                   :         :           :                
 GND*                         : 61        :        :                   :         : 2         :                
-Current_register[0]          : 62        : output : 3.3-V LVTTL       :         : 2         : N              
+GND*                         : 62        :        :                   :         : 2         :                
 VCCINT                       : 63        : power  :                   : 1.8V    :           :                
-Current_register[7]          : 64        : output : 3.3-V LVTTL       :         : 2         : N              
+GND*                         : 64        :        :                   :         : 2         :                
 GND                          : 65        : gnd    :                   :         :           :                
 ledsel[2]                    : 66        : output : 3.3-V LVTTL       :         : 2         : Y              
-Current_register[15]         : 67        : output : 3.3-V LVTTL       :         : 2         : N              
+GND*                         : 67        :        :                   :         : 2         :                
 ledsel[3]                    : 68        : output : 3.3-V LVTTL       :         : 2         : Y              
-Current_register[8]          : 69        : output : 3.3-V LVTTL       :         : 2         : N              
-Current_register[3]          : 70        : output : 3.3-V LVTTL       :         : 2         : N              
-Current_register[11]         : 71        : output : 3.3-V LVTTL       :         : 2         : N              
-Current_register[12]         : 72        : output : 3.3-V LVTTL       :         : 2         : N              
-Current_register[9]          : 73        : output : 3.3-V LVTTL       :         : 2         : N              
-Current_register[10]         : 74        : output : 3.3-V LVTTL       :         : 2         : N              
-Current_register[5]          : 75        : output : 3.3-V LVTTL       :         : 2         : N              
-Current_register[1]          : 76        : output : 3.3-V LVTTL       :         : 2         : N              
+GND*                         : 69        :        :                   :         : 2         :                
+GND*                         : 70        :        :                   :         : 2         :                
+GND*                         : 71        :        :                   :         : 2         :                
+GND*                         : 72        :        :                   :         : 2         :                
+GND*                         : 73        :        :                   :         : 2         :                
+GND*                         : 74        :        :                   :         : 2         :                
+GND*                         : 75        :        :                   :         : 2         :                
+GND*                         : 76        :        :                   :         : 2         :                
 PB1                          : 77        : input  : 3.3-V LVTTL       :         : 2         : Y              
 PB0                          : 78        : input  : 3.3-V LVTTL       :         : 2         : Y              
 GND                          : 79        : gnd    :                   :         :           :                
 VCCIO2                       : 80        : power  :                   : 3.3V    : 2         :                
-Current_register[14]         : 81        : output : 3.3-V LVTTL       :         : 2         : N              
-Current_register[13]         : 82        : output : 3.3-V LVTTL       :         : 2         : N              
-Current_register[2]          : 83        : output : 3.3-V LVTTL       :         : 2         : N              
+GND*                         : 81        :        :                   :         : 2         :                
+GND*                         : 82        :        :                   :         : 2         :                
+GND*                         : 83        :        :                   :         : 2         :                
 GND*                         : 84        :        :                   :         : 2         :                
-Current_register[6]          : 85        : output : 3.3-V LVTTL       :         : 2         : N              
+GND*                         : 85        :        :                   :         : 2         :                
 GND*                         : 86        :        :                   :         : 2         :                
 GND*                         : 87        :        :                   :         : 2         :                
 VCCINT                       : 88        : power  :                   : 1.8V    :           :                

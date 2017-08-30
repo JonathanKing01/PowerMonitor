@@ -7,8 +7,6 @@
 # Top level modules:
 # 	FullBaseStation
 # Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
-# -- Compiling module FullBaseStation_vlg_sample_tst
-# -- Compiling module FullBaseStation_vlg_check_tst
 # -- Compiling module FullBaseStation_vlg_vec_tst
 # 
 # Top level modules:
@@ -20,8 +18,5 @@
 # Loading maxv_ver.maxv_lcell
 # Loading maxv_ver.maxv_asynch_lcell
 # Loading maxv_ver.maxv_lcell_register
-# Loading work.FullBaseStation_vlg_sample_tst
-# Loading work.FullBaseStation_vlg_check_tst
-# Simulation passed !
-# ** Note: $finish    : UARTBaseStation.vt(567)
-#    Time: 2 us  Iteration: 0  Instance: /FullBaseStation_vlg_vec_tst/tb_out
+# ** Note: $finish    : UARTBaseStation.vt(52)
+#    Time: 2 us  Iteration: 0  Instance: /FullBaseStation_vlg_vec_tst
